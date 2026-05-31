@@ -19,7 +19,7 @@
         app: "Storage Cleaner",
         summary: "A practical guide to finding duplicate photos, screenshots, and giant videos without panic-deleting your camera roll.",
         category: "iPhone Storage Cleanup",
-        image: "/assets/apps/storage-cleaner-preview.png?v=dark-20260531",
+        image: "/assets/apps/storage-cleaner-preview.jpg?v=20260531perf",
         imageAlt: "Storage Cleaner cleanup dashboard thumbnail"
       }
     },
@@ -32,7 +32,7 @@
         app: "Aura TV",
         summary: "A short field guide to playlists, credentials, EPG files, and not confusing a player with a provider.",
         category: "IPTV Player Setup",
-        image: "/assets/apps/aura-tv-preview.png",
+        image: "/assets/apps/aura-tv-preview.jpg?v=20260531perf",
         imageAlt: "Aura TV live guide thumbnail"
       }
     },
@@ -45,7 +45,7 @@
         app: "PureShot",
         summary: "A note about natural iPhone capture, direct controls, and not turning every face into plastic wrap.",
         category: "No Filter Camera",
-        image: "/assets/apps/pureshot-preview.png",
+        image: "/assets/apps/pureshot-preview.jpg?v=20260531perf",
         imageAlt: "PureShot camera controls thumbnail"
       }
     },
@@ -58,7 +58,7 @@
         app: "MathWar",
         summary: "A development note about arithmetic gates, army growth, and making short math practice sessions more playable.",
         category: "Math Learning Game",
-        image: "/assets/apps/mathwar-preview.png",
+        image: "/assets/apps/mathwar-preview.jpg?v=20260531perf",
         imageAlt: "MathWar gameplay thumbnail"
       }
     }

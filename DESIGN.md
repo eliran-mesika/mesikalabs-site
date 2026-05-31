@@ -27,3 +27,4 @@ Build the central hub as a compact product portfolio console: clear app routing,
 - Links use `<a href>` and should be crawlable without JavaScript.
 - The latest-posts feed must have static fallback content in HTML, then enhance with JavaScript when feeds are available.
 - Use native lazy loading for below-the-fold app icons or screenshots. Do not lazy-load first-viewport icons.
+- Use web-sized icon and preview derivatives on the homepage. Keep full-resolution source app assets available, but do not load 1024px icons into 48px or 72px UI slots.
