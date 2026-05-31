@@ -1,6 +1,9 @@
 (function () {
   const feedTarget = document.querySelector("[data-feed-target]");
   const status = document.getElementById("feed-status");
+  const filterButtons = Array.from(document.querySelectorAll("[data-feed-filter]"));
+  let activeFilter = "all";
+  let renderedPosts = [];
 
   if (!feedTarget || !status) {
     return;
@@ -99,11 +102,15 @@
   }
 
   function render(posts) {
-    const recentPosts = posts
+    renderedPosts = posts
       .sort((left, right) => new Date(right.date) - new Date(left.date))
       .slice(0, 6);
 
-    if (recentPosts.length === 0) {
+    const recentPosts = activeFilter === "all"
+      ? renderedPosts
+      : renderedPosts.filter((post) => post.app === activeFilter);
+
+    if (renderedPosts.length === 0) {
       status.textContent = "Showing fallback posts while app feeds warm up.";
       return;
     }
@@ -114,8 +121,8 @@
         : dateFormatter.format(new Date(post.date));
 
       return `
-        <article class="post-card">
-          ${post.image ? `<img class="post-thumb" src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt)}" loading="lazy">` : ""}
+        <article class="post-card" data-app="${escapeHtml(post.app)}">
+          ${post.image ? `<img class="post-thumb" src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt)}" width="414" height="900" loading="lazy" decoding="async">` : ""}
           <p class="post-meta">${escapeHtml(post.app)} / ${escapeHtml(date)}</p>
           <h3><a href="${escapeHtml(post.url)}">${escapeHtml(post.title)}</a></h3>
           <p>${escapeHtml(post.summary)}</p>
@@ -123,8 +130,20 @@
       `;
     }).join("");
 
-    status.textContent = `Showing ${recentPosts.length} newest posts from app blogs.`;
+    status.textContent = activeFilter === "all"
+      ? `Showing ${recentPosts.length} newest posts from app blogs.`
+      : `Showing ${recentPosts.length} ${activeFilter} posts.`;
   }
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeFilter = button.dataset.feedFilter || "all";
+      filterButtons.forEach((item) => {
+        item.classList.toggle("is-active", item === button);
+      });
+      render(renderedPosts);
+    });
+  });
 
   Promise.allSettled(
     sources.map((source) => fetch(source.url, { mode: "cors" }).then((response) => {
