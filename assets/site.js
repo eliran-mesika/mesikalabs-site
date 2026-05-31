@@ -7,10 +7,50 @@
   }
 
   const sources = [
-    "https://storagecleaner.mesikalabs.com/blog/feed.json",
-    "https://auratv.mesikalabs.com/blog/feed.json",
-    "https://pureshot.mesikalabs.com/blog/feed.json",
-    "https://mathwar.mesikalabs.com/blog/feed.json"
+    {
+      url: "https://storagecleaner.mesikalabs.com/blog/feed.json",
+      fallback: {
+        title: "Your iPhone Storage Is Full Again. Stunning. Truly Shocking.",
+        url: "https://storagecleaner.mesikalabs.com/blog/iphone-storage-full-again/",
+        date: "2026-05-31",
+        app: "Storage Cleaner",
+        summary: "A practical guide to finding duplicate photos, screenshots, and giant videos without panic-deleting your camera roll.",
+        category: "iPhone Storage Cleanup"
+      }
+    },
+    {
+      url: "https://auratv.mesikalabs.com/blog/feed.json",
+      fallback: {
+        title: "An IPTV Player Is Not a Secret Channel Machine",
+        url: "https://auratv.mesikalabs.com/blog/iptv-player-without-channels/",
+        date: "2026-05-31",
+        app: "Aura TV",
+        summary: "A short field guide to playlists, credentials, EPG files, and not confusing a player with a provider.",
+        category: "IPTV Player Setup"
+      }
+    },
+    {
+      url: "https://pureshot.mesikalabs.com/blog/feed.json",
+      fallback: {
+        title: "What If a Camera App Just Took the Picture?",
+        url: "https://pureshot.mesikalabs.com/blog/no-filter-camera/",
+        date: "2026-05-31",
+        app: "PureShot",
+        summary: "A note about natural iPhone capture, direct controls, and not turning every face into plastic wrap.",
+        category: "No Filter Camera"
+      }
+    },
+    {
+      url: "https://mathwar.mesikalabs.com/blog/feed.json",
+      fallback: {
+        title: "Math Practice Needs Fewer Worksheets and More Battles",
+        url: "https://mathwar.mesikalabs.com/blog/math-practice-with-battles/",
+        date: "2026-05-31",
+        app: "MathWar",
+        summary: "A development note about arithmetic gates, army growth, and making short math practice sessions more playable.",
+        category: "Math Learning Game"
+      }
+    }
   ];
 
   const dateFormatter = new Intl.DateTimeFormat("en", {
@@ -76,17 +116,22 @@
   }
 
   Promise.allSettled(
-    sources.map((source) => fetch(source, { mode: "cors" }).then((response) => {
+    sources.map((source) => fetch(source.url, { mode: "cors" }).then((response) => {
       if (!response.ok) {
-        throw new Error(`${source} returned ${response.status}`);
+        throw new Error(`${source.url} returned ${response.status}`);
       }
 
       return response.json();
     }))
   ).then((results) => {
-    const posts = results.flatMap((result) => (
-      result.status === "fulfilled" ? normalizePosts(result.value) : []
-    ));
+    const posts = results.flatMap((result, index) => {
+      if (result.status === "fulfilled") {
+        const normalized = normalizePosts(result.value);
+        return normalized.length > 0 ? normalized : [sources[index].fallback];
+      }
+
+      return [sources[index].fallback];
+    });
 
     render(posts);
   }).catch(() => {
