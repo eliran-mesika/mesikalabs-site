@@ -15,7 +15,9 @@
         date: "2026-05-31",
         app: "Storage Cleaner",
         summary: "A practical guide to finding duplicate photos, screenshots, and giant videos without panic-deleting your camera roll.",
-        category: "iPhone Storage Cleanup"
+        category: "iPhone Storage Cleanup",
+        image: "/assets/apps/storage-cleaner-preview.png",
+        imageAlt: "Storage Cleaner cleanup dashboard thumbnail"
       }
     },
     {
@@ -26,7 +28,9 @@
         date: "2026-05-31",
         app: "Aura TV",
         summary: "A short field guide to playlists, credentials, EPG files, and not confusing a player with a provider.",
-        category: "IPTV Player Setup"
+        category: "IPTV Player Setup",
+        image: "/assets/apps/aura-tv-preview.png",
+        imageAlt: "Aura TV live guide thumbnail"
       }
     },
     {
@@ -37,7 +41,9 @@
         date: "2026-05-31",
         app: "PureShot",
         summary: "A note about natural iPhone capture, direct controls, and not turning every face into plastic wrap.",
-        category: "No Filter Camera"
+        category: "No Filter Camera",
+        image: "/assets/apps/pureshot-preview.png",
+        imageAlt: "PureShot camera controls thumbnail"
       }
     },
     {
@@ -48,7 +54,9 @@
         date: "2026-05-31",
         app: "MathWar",
         summary: "A development note about arithmetic gates, army growth, and making short math practice sessions more playable.",
-        category: "Math Learning Game"
+        category: "Math Learning Game",
+        image: "/assets/apps/mathwar-preview.png",
+        imageAlt: "MathWar gameplay thumbnail"
       }
     }
   ];
@@ -84,7 +92,9 @@
         date: String(item.date),
         app: String(item.app || "MesikaLabs"),
         summary: String(item.summary || ""),
-        category: String(item.category || "Blog")
+        category: String(item.category || "Blog"),
+        image: String(item.image || ""),
+        imageAlt: String(item.imageAlt || item.title || "")
       }));
   }
 
@@ -105,6 +115,7 @@
 
       return `
         <article class="post-card">
+          ${post.image ? `<img class="post-thumb" src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt)}" loading="lazy">` : ""}
           <p class="post-meta">${escapeHtml(post.app)} / ${escapeHtml(date)}</p>
           <h3><a href="${escapeHtml(post.url)}">${escapeHtml(post.title)}</a></h3>
           <p>${escapeHtml(post.summary)}</p>
