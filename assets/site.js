@@ -19,7 +19,7 @@
         app: "Storage Cleaner",
         summary: "A practical guide to finding duplicate photos, screenshots, and giant videos without panic-deleting your camera roll.",
         category: "iPhone Storage Cleanup",
-        image: "/assets/apps/storage-cleaner-preview.png",
+        image: "/assets/apps/storage-cleaner-preview.png?v=dark-20260531",
         imageAlt: "Storage Cleaner cleanup dashboard thumbnail"
       }
     },
