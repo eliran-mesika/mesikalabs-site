@@ -1,6 +1,6 @@
 # MesikaLabs Keyword Research and Technical SEO Map
 
-Prepared for `mesikalabs.com` and app subdomains on 2026-05-31.
+Prepared for `mesikalabs.com` and app subdomains on 2026-05-31. Updated with a public-search refresh on 2026-06-01.
 
 This is an intent map, not a fake search-volume report. Use Search Console after launch to replace assumptions with real impressions, CTR, and query language.
 
@@ -19,11 +19,13 @@ Secondary long-tail keywords:
 - independent iPhone app developer MesikaLabs
 - MesikaLabs app support and privacy pages
 - iPhone utility entertainment camera education apps
+- iPhone storage cleaner IPTV player no filter camera math game
+- independent iOS app lab support pages
 
 Placement:
 
-- Meta title: `MesikaLabs - iPhone Apps for Storage, IPTV, Camera, and Math Games`
-- Meta description: mention Storage Cleaner, Aura TV IPTV player, PureShot no-filter camera, and MathWar learning game once.
+- Meta title: `MesikaLabs | iPhone Apps for Storage, IPTV, Camera & Math Games`
+- Meta description: mention Storage Cleaner for cleanup, Aura TV IPTV player, PureShot no-filter camera, and MathWar arithmetic game once.
 - H1: brand/product family statement, not a keyword list.
 - H2: `Four apps, four different annoyances removed.`
 - Internal anchors: use descriptive links such as `Open Storage Cleaner site`, not `click here`.
@@ -38,6 +40,8 @@ Primary keyword cluster:
 - iPhone duplicate photo cleaner
 - free up iPhone storage
 - iPhone storage cleanup app
+- duplicate photos cleaner iPhone
+- large video cleaner iPhone
 
 Secondary long-tail keywords:
 
@@ -52,8 +56,8 @@ Secondary long-tail keywords:
 
 Placement:
 
-- App site meta title: `Storage Cleaner - Free Up iPhone Space Safely`
-- App site meta description: include `iPhone storage cleaner`, `duplicates`, `similar photos`, and `review before delete`.
+- App site meta title: `Storage Cleaner for iPhone - Review Duplicates & Free Space`
+- App site meta description: include `free up iPhone storage`, `duplicate photos`, `similar shots`, `screenshots`, `large videos`, and `review-before-delete`.
 - H1: `Free up iPhone space without deleting blindly`
 - H2 examples: `Review duplicates before cleanup`, `Find large videos and screenshots`, `Private on-device cleanup`
 - Blog category path: `/blog/storage-cleaner/` on the central domain plan, but implemented app-owned path is `https://storagecleaner.mesikalabs.com/blog/`.
@@ -68,6 +72,8 @@ Primary keyword cluster:
 - M3U player iPhone
 - Xtream IPTV player iOS
 - IPTV playlist player
+- IPTV player for iPhone and iPad
+- XMLTV EPG player iOS
 
 Secondary long-tail keywords:
 
@@ -81,8 +87,8 @@ Secondary long-tail keywords:
 
 Placement:
 
-- App site meta title: `Aura TV - IPTV Player for Your Own Playlists`
-- App site meta description: include `IPTV player`, `M3U`, `Xtream-compatible credentials`, `EPG`, and `does not provide channels`.
+- App site meta title: `Aura TV IPTV Player for iPhone - M3U, Xtream & EPG`
+- App site meta description: include `IPTV player`, `iPhone and iPad`, `M3U`, `Xtream-compatible credentials`, `EPG/XMLTV`, and `No channels included`.
 - H1: `IPTV playback for playlists you provide`
 - H2 examples: `Bring your own M3U playlist`, `Guide data without channel promises`, `Player-only support`
 - Alt text: `Aura TV IPTV player live guide screen`, `Aura TV M3U playlist import screen`.
@@ -107,11 +113,13 @@ Secondary long-tail keywords:
 - RAW camera app for iPhone 15
 - manual exposure focus camera app
 - process zero camera app
+- no filter iPhone camera
+- iPhone camera app natural photos
 
 Placement:
 
-- App site meta title: `PureShot - No Filter Camera App for Natural iPhone Capture`
-- App site meta description: include `no filter camera app`, `natural capture`, `direct controls`, and `no tracking`.
+- App site meta title: `PureShot No Filter Camera App for iPhone - Natural Capture`
+- App site meta description: include `no-filter iPhone camera app`, `natural capture`, `manual controls`, `local media handling`, and `no tracking`.
 - H1: `Natural capture, direct control`
 - H2 examples: `No beauty filters`, `Local media handling`, `Manual controls where they belong`
 - Alt text: `PureShot camera controls on iPhone`, `PureShot natural capture settings screen`.
@@ -135,11 +143,13 @@ Secondary long-tail keywords:
 - arithmetic learning game with levels
 - classroom-friendly math practice game
 - zombie math game for kids
+- arithmetic battle game iPhone
+- multiplication battle game
 
 Placement:
 
-- App site meta title: `MathWar - Educational Math Battle Game for iPhone`
-- App site meta description: include `math learning game`, `arithmetic`, `addition`, `subtraction`, `multiplication`, and `in development`.
+- App site meta title: `MathWar Math Learning Game for iPhone - Arithmetic Battles`
+- App site meta description: include `math learning game`, `iPhone and iPad`, `arithmetic gates`, `multiplication practice`, `squad battles`, and `in development`.
 - H1: `Math practice with battles, gates, and no worksheet smell`
 - H2 examples: `Arithmetic gates`, `Army growth through answers`, `Built for short mobile sessions`
 - Alt text: `MathWar arithmetic gate gameplay on iPhone`, `MathWar educational math battle game icon`.
@@ -153,6 +163,20 @@ Placement:
 - Alt text: describe the actual image and include a niche term only when the image genuinely shows it.
 - Internal links: use crawlable `<a href>` links with descriptive anchor text.
 - Canonicals: each page should point to its final HTTPS URL, not a staging URL or duplicate subdomain.
+- Exception: while `mathwar.mesikalabs.com` is still blocked on GitHub Pages certificate issuance, keep MathWar crawl files on `http://` so crawlers do not hit a broken HTTPS canonical. Flip back to HTTPS when the certificate is issued and enforced.
+
+## `llms.txt`
+
+Add a root-level `llms.txt` file on every host. It should be short Markdown for AI assistants:
+
+- H1 product/site name.
+- One-sentence summary.
+- Key crawlable links.
+- Product positioning and safety boundaries.
+- Support contact.
+- Guardrails for claims that must not be invented.
+
+Do not treat `llms.txt` as a ranking factor. It is an AI-discovery helper and a clean source of truth for assistants.
 
 ## Technical SEO Implementation
 
@@ -176,7 +200,7 @@ Sitemap: https://mesikalabs.com/sitemap.xml
 Sitemap: https://storagecleaner.mesikalabs.com/sitemap.xml
 Sitemap: https://auratv.mesikalabs.com/sitemap.xml
 Sitemap: https://pureshot.mesikalabs.com/sitemap.xml
-Sitemap: https://mathwar.mesikalabs.com/sitemap.xml
+Sitemap: http://mathwar.mesikalabs.com/sitemap.xml
 ```
 
 ### `sitemap.xml`

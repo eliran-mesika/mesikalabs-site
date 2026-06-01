@@ -39,24 +39,24 @@
     {
       url: "https://pureshot.mesikalabs.com/blog/feed.json",
       fallback: {
-        title: "What If a Camera App Just Took the Picture?",
+        title: "What If a No-Filter Camera App Just Took the Picture?",
         url: "https://pureshot.mesikalabs.com/blog/no-filter-camera/",
         date: "2026-05-31",
         app: "PureShot",
-        summary: "A note about natural iPhone capture, direct controls, and not turning every face into plastic wrap.",
+        summary: "A note about no-filter natural iPhone capture, direct controls, and not turning every face into plastic wrap.",
         category: "No Filter Camera",
         image: "/assets/apps/pureshot-preview.jpg?v=20260531perf",
         imageAlt: "PureShot camera controls thumbnail"
       }
     },
     {
-      url: "https://mathwar.mesikalabs.com/blog/feed.json",
+      url: "http://mathwar.mesikalabs.com/blog/feed.json",
       fallback: {
         title: "Math Practice Needs Fewer Worksheets and More Battles",
         url: "http://mathwar.mesikalabs.com/blog/math-practice-with-battles/",
         date: "2026-05-31",
         app: "MathWar",
-        summary: "A development note about arithmetic gates, army growth, and making short math practice sessions more playable.",
+        summary: "A development note about arithmetic gates, multiplication practice, army growth, and making short math sessions more playable.",
         category: "Math Learning Game",
         image: "/assets/apps/mathwar-preview.jpg?v=20260531perf",
         imageAlt: "MathWar gameplay thumbnail"

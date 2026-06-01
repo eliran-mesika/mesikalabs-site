@@ -8,6 +8,7 @@ This repo contains:
 - `assets/site.css` and `assets/site.js`
 - app icon assets used by the homepage
 - `robots.txt` and `sitemap.xml`
+- `llms.txt` AI-assistant site summary
 - SEO and blog strategy documentation under `docs/`
 
 ## Local Smoke Test
@@ -25,7 +26,7 @@ The homepage reads these app-owned feeds:
 - `https://storagecleaner.mesikalabs.com/blog/feed.json`
 - `https://auratv.mesikalabs.com/blog/feed.json`
 - `https://pureshot.mesikalabs.com/blog/feed.json`
-- `https://mathwar.mesikalabs.com/blog/feed.json`
+- `http://mathwar.mesikalabs.com/blog/feed.json`
 
 Each feed should return either an array of posts or an object with an `items` array. Required post fields:
 

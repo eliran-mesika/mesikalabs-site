@@ -6,3 +6,5 @@ Sitemap: https://storagecleaner.mesikalabs.com/sitemap.xml
 Sitemap: https://auratv.mesikalabs.com/sitemap.xml
 Sitemap: https://pureshot.mesikalabs.com/sitemap.xml
 Sitemap: http://mathwar.mesikalabs.com/sitemap.xml
+
+# LLM-friendly site summary: https://mesikalabs.com/llms.txt
