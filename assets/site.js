@@ -56,10 +56,10 @@
         url: "http://mathwar.mesikalabs.com/blog/math-practice-with-battles/",
         date: "2026-05-31",
         app: "MathWar",
-        summary: "A development note about arithmetic gates, multiplication practice, army growth, and making short math sessions more playable.",
+        summary: "A development note about arithmetic gates, hero choices, squad growth, and making short math sessions more playable.",
         category: "Math Learning Game",
-        image: "/assets/apps/mathwar-preview.jpg?v=20260531perf",
-        imageAlt: "MathWar gameplay thumbnail"
+        image: "/assets/apps/mathwar-preview.jpg?v=20260628",
+        imageAlt: "MathWar arithmetic gate gameplay thumbnail"
       }
     }
   ];
