@@ -70,6 +70,14 @@
     year: "numeric"
   });
 
+  const homepageImages = new Map(sources.map((source) => [
+    source.fallback.app,
+    {
+      image: source.fallback.image,
+      imageAlt: source.fallback.imageAlt
+    }
+  ]));
+
   function escapeHtml(value) {
     return String(value || "").replace(/[&<>"']/g, (character) => ({
       "&": "&amp;",
@@ -119,10 +127,13 @@
       const date = Number.isNaN(new Date(post.date).getTime())
         ? post.date
         : dateFormatter.format(new Date(post.date));
+      const homepageImage = homepageImages.get(post.app);
+      const image = homepageImage ? homepageImage.image : post.image;
+      const imageAlt = homepageImage ? homepageImage.imageAlt : post.imageAlt;
 
       return `
         <article class="post-card" data-app="${escapeHtml(post.app)}">
-          ${post.image ? `<img class="post-thumb" src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt)}" width="414" height="900" loading="lazy" decoding="async">` : ""}
+          ${image ? `<img class="post-thumb" src="${escapeHtml(image)}" alt="${escapeHtml(imageAlt)}" width="414" height="900" loading="lazy" decoding="async">` : ""}
           <p class="post-meta">${escapeHtml(post.app)} / ${escapeHtml(date)}</p>
           <h3><a href="${escapeHtml(post.url)}">${escapeHtml(post.title)}</a></h3>
           <p>${escapeHtml(post.summary)}</p>

@@ -258,9 +258,12 @@ h1 {
 }
 
 .showcase-card.math .showcase-screen {
-  padding: 0;
-  object-fit: cover;
+  padding: 18px;
+  object-fit: contain;
   object-position: top center;
+  background:
+    radial-gradient(circle at 50% 24%, rgba(8, 183, 217, 0.18), transparent 38%),
+    linear-gradient(180deg, #07101f 0%, #101a30 55%, #060b17 100%);
 }
 
 .showcase-label {
@@ -531,11 +534,11 @@ h1 {
 }
 
 .post-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .post-card {
-  padding: 18px;
+  padding: 20px;
   display: grid;
   align-content: start;
   border-top: 4px solid rgba(17, 24, 39, 0.12);
@@ -543,13 +546,23 @@ h1 {
 
 .post-thumb {
   width: 100%;
-  height: 150px;
-  margin-bottom: 14px;
+  height: 300px;
+  margin-bottom: 18px;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top center;
+  padding: 14px 52px 0;
   border: 1px solid var(--line);
-  background: #eef2ec;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.58), rgba(239, 244, 238, 0.84)),
+    #eef2ec;
+}
+
+.post-card[data-app="MathWar"] .post-thumb {
+  padding: 14px;
+  background:
+    radial-gradient(circle at 50% 26%, rgba(8, 183, 217, 0.16), transparent 38%),
+    linear-gradient(180deg, #07101f 0%, #101a30 55%, #060b17 100%);
 }
 
 .post-card h3 a {
@@ -754,9 +767,14 @@ button:focus-visible {
   }
 
   .showcase-card.math .showcase-screen {
-    padding: 0;
-    object-fit: cover;
+    padding: 16px;
+    object-fit: contain;
     object-position: top center;
+  }
+
+  .post-thumb {
+    height: 280px;
+    padding-inline: 58px;
   }
 
   .app-card-top,
