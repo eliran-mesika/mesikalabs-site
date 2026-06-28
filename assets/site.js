@@ -58,8 +58,8 @@
         app: "MathWar",
         summary: "A development note about arithmetic gates, hero choices, squad growth, and making short math sessions more playable.",
         category: "Math Learning Game",
-        image: "/assets/apps/mathwar-preview.jpg?v=20260628heroes",
-        imageAlt: "MathWar hero selection thumbnail"
+        image: "/assets/apps/mathwar-roster-preview.jpg?v=20260628current2",
+        imageAlt: "MathWar current hero roster thumbnail"
       }
     }
   ];

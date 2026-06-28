@@ -279,6 +279,12 @@ h1 {
   object-position: left top;
 }
 
+.showcase-card.math .showcase-screen {
+  padding: 0 132px 0 0;
+  object-fit: cover;
+  object-position: top left;
+}
+
 .showcase-label {
   position: absolute;
   inset: auto 12px 12px;
@@ -435,6 +441,16 @@ h1 {
 .app-pure .app-preview,
 .app-math .app-preview {
   padding-inline: 42px;
+}
+
+.app-math .app-card-icon {
+  display: none;
+}
+
+.app-math .app-preview {
+  object-fit: cover;
+  object-position: top center;
+  padding: 0;
 }
 
 .app-card h3,
@@ -788,6 +804,12 @@ button:focus-visible {
     padding: 14px 52px 76px;
   }
 
+  .showcase-card.math .showcase-screen {
+    padding: 0 0 68px;
+    object-fit: cover;
+    object-position: top center;
+  }
+
   .showcase-stack {
     grid-template-columns: 1fr;
   }
@@ -800,6 +822,10 @@ button:focus-visible {
 
   .app-preview {
     padding-inline: 56px;
+  }
+
+  .app-math .app-preview {
+    padding: 0;
   }
 
   .apps-section,
