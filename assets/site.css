@@ -145,22 +145,22 @@ a {
 }
 
 .hero-section {
-  min-height: min(760px, calc(100vh - 86px));
-  display: flex;
-  align-items: center;
-  padding: 42px 0 46px;
+  padding: 68px 0 56px;
 }
 
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(300px, 0.8fr) minmax(520px, 1.2fr);
-  gap: 44px;
-  align-items: center;
+  gap: 34px;
+  align-items: start;
 }
 
 .hero-inner > *,
 .hero-copy {
   min-width: 0;
+}
+
+.hero-copy {
+  max-width: 920px;
 }
 
 .eyebrow {
@@ -180,15 +180,15 @@ p {
 }
 
 h1 {
-  max-width: 16ch;
+  max-width: 18ch;
   margin-bottom: 20px;
-  font-size: 3.85rem;
-  line-height: 0.98;
+  font-size: 3.55rem;
+  line-height: 1;
   letter-spacing: 0;
 }
 
 .hero-lede {
-  max-width: 54ch;
+  max-width: 66ch;
   color: var(--muted);
   font-size: 1.08rem;
   line-height: 1.66;
@@ -226,14 +226,15 @@ h1 {
 
 .hero-showcase {
   display: grid;
-  grid-template-columns: minmax(240px, 0.95fr) minmax(300px, 1.05fr);
-  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
   align-items: stretch;
 }
 
 .showcase-card {
   position: relative;
-  display: block;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
   min-height: 0;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -246,57 +247,31 @@ h1 {
   text-decoration: none;
 }
 
-.showcase-primary {
-  min-height: 548px;
-}
-
-.showcase-stack {
-  display: grid;
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  min-width: 0;
-}
-
 .showcase-screen {
   width: 100%;
-  height: 100%;
+  height: 390px;
   object-fit: contain;
   object-position: top center;
-  padding: 18px 52px 88px;
-}
-
-.showcase-primary .showcase-screen {
-  padding: 22px 60px 96px;
-}
-
-.showcase-stack .showcase-card {
-  min-height: 174px;
-}
-
-.showcase-stack .showcase-screen {
-  height: 174px;
-  padding: 12px 130px 58px 18px;
-  object-position: left top;
+  padding: 18px 48px 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(239, 244, 238, 0.82));
 }
 
 .showcase-card.math .showcase-screen {
-  padding: 0 132px 0 0;
+  padding: 0;
   object-fit: cover;
-  object-position: top left;
+  object-position: top center;
 }
 
 .showcase-label {
-  position: absolute;
-  inset: auto 12px 12px;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.9);
+  min-height: 88px;
+  padding: 14px;
+  border-top: 1px solid rgba(216, 222, 214, 0.9);
+  background: rgba(255, 255, 255, 0.94);
   color: var(--ink);
-  backdrop-filter: blur(14px);
 }
 
 .showcase-label img {
@@ -418,15 +393,19 @@ h1 {
   background: #eef2ec;
 }
 
+.app-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
 .app-card-icon {
-  position: absolute;
-  left: 12px;
-  top: 12px;
-  z-index: 2;
-  width: 72px;
-  height: 72px;
-  border-radius: 16px;
-  box-shadow: 0 12px 24px rgba(17, 24, 39, 0.2);
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.14);
 }
 
 .app-preview {
@@ -441,10 +420,6 @@ h1 {
 .app-pure .app-preview,
 .app-math .app-preview {
   padding-inline: 42px;
-}
-
-.app-math .app-card-icon {
-  display: none;
 }
 
 .app-math .app-preview {
@@ -489,7 +464,7 @@ h1 {
 
 .app-kicker,
 .post-meta {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-size: 0.78rem;
   font-weight: 850;
   text-transform: uppercase;
@@ -692,30 +667,7 @@ button:focus-visible {
   }
 
   .hero-showcase {
-    grid-template-columns: 1fr;
-  }
-
-  .showcase-primary {
-    min-height: 430px;
-  }
-
-  .showcase-primary .showcase-screen {
-    padding-inline: 34%;
-  }
-
-  .showcase-stack {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: none;
-  }
-
-  .showcase-stack .showcase-card {
-    min-height: 240px;
-  }
-
-  .showcase-stack .showcase-screen {
-    height: 240px;
-    padding: 14px 34px 70px;
-    object-position: top center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero-inner {
@@ -760,7 +712,6 @@ button:focus-visible {
     padding: 24px 0 28px;
   }
 
-  .hero-showcase,
   .app-grid,
   .post-grid,
   .support-grid,
@@ -793,25 +744,19 @@ button:focus-visible {
     width: 100%;
   }
 
-  .showcase-primary,
-  .showcase-stack .showcase-card {
-    min-height: 260px;
+  .hero-showcase {
+    grid-template-columns: 1fr;
   }
 
-  .showcase-primary .showcase-screen,
-  .showcase-stack .showcase-screen {
-    height: 260px;
-    padding: 14px 52px 76px;
+  .showcase-screen {
+    height: 310px;
+    padding: 16px 66px 0;
   }
 
   .showcase-card.math .showcase-screen {
-    padding: 0 0 68px;
+    padding: 0;
     object-fit: cover;
     object-position: top center;
-  }
-
-  .showcase-stack {
-    grid-template-columns: 1fr;
   }
 
   .app-card-top,
