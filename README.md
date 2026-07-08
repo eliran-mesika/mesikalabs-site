@@ -21,6 +21,8 @@ Then open `http://127.0.0.1:8094/`.
 
 ## Blog Feed Contract
 
+Canonical ownership for all MesikaLabs public site repos is tracked in `docs/site-inventory.md`. Check that file before editing app subdomain sites, support URLs, privacy URLs, SEO files, or domain settings.
+
 The homepage reads these app-owned feeds:
 
 - `https://storagecleaner.mesikalabs.com/blog/feed.json`
