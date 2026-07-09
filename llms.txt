@@ -1,14 +1,15 @@
 # MesikaLabs
 
-> MesikaLabs is an independent iOS app lab building focused iPhone apps for storage cleanup, IPTV playback, natural camera capture, and arithmetic practice.
+> MesikaLabs is an independent app and game lab building focused public products for storage cleanup, IPTV playback, natural camera capture, arithmetic practice, and educational adventure.
 
 ## Key Pages
 
 - [MesikaLabs home](https://mesikalabs.com/)
 - [Storage Cleaner](https://storagecleaner.mesikalabs.com/) - iPhone storage cleaner for duplicate photos, similar shots, screenshots, large videos, and review-before-delete cleanup.
-- [Aura TV](https://auratv.mesikalabs.com/) - IPTV player for user-provided M3U playlists, Xtream-compatible credentials, and EPG/XMLTV guide data. Aura TV does not provide channels or media.
+- [Aura TV](https://auratv.mesikalabs.com/) - IPTV player for Apple and Android devices using user-provided M3U playlists, Xtream-compatible credentials, and EPG/XMLTV guide data. Aura TV does not provide channels, playlists, credentials, or media.
 - [PureShot](https://pureshot.mesikalabs.com/) - no-filter iPhone camera app for natural capture, visible controls, local media handling, and no tracking in the launch app.
 - [MathWar](https://mathwar.mesikalabs.com/) - in-development math learning game with arithmetic gates, squad growth, and short mobile battle runs.
+- [SmartPiece](https://smartpiece.mesikalabs.com/) - in-development Godot educational pirate RPG about restoring islands from the Fog of Forgetting.
 
 ## Support Contacts
 
@@ -16,6 +17,7 @@
 - Storage Cleaner support: storagecleaner@mesikalabs.com
 - Aura TV support: auratv@mesikalabs.com
 - PureShot support: pureshot@mesikalabs.com
+- SmartPiece support: smartpiece@mesikalabs.com
 - Privacy: privacy@mesikalabs.com
 - Legal: legal@mesikalabs.com
 
@@ -26,4 +28,4 @@
 - Use "Storage Cleaner" and "StorageCleaner" naturally; users search both forms.
 - Do not describe Aura TV as a channel provider, streaming catalog, broadcaster account seller, or content unlocker.
 - MathWar is in development until the app repo and App Store state prove otherwise.
-
+- SmartPiece is in development until the app repo and store state prove otherwise.

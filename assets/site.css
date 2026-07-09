@@ -10,6 +10,7 @@
   --blue: #1f67d2;
   --red: #b72424;
   --amber: #c8871c;
+  --teal: #2f9d92;
   --shadow: 0 16px 36px rgba(17, 24, 39, 0.08);
   --content: 1180px;
 }
@@ -59,6 +60,7 @@ a {
 .hero-inner,
 .apps-section,
 .latest-section,
+.support-section,
 .strategy-section,
 .site-footer {
   width: min(100% - 32px, var(--content));
@@ -226,7 +228,7 @@ h1 {
 
 .hero-showcase {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 16px;
   align-items: stretch;
 }
@@ -264,6 +266,15 @@ h1 {
   background:
     radial-gradient(circle at 50% 24%, rgba(8, 183, 217, 0.18), transparent 38%),
     linear-gradient(180deg, #07101f 0%, #101a30 55%, #060b17 100%);
+}
+
+.showcase-card.smartpiece .showcase-screen {
+  padding: 18px;
+  object-fit: cover;
+  object-position: center;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(47, 157, 146, 0.16), transparent 40%),
+    linear-gradient(180deg, #12303a 0%, #2f261c 100%);
 }
 
 .showcase-label {
@@ -314,6 +325,10 @@ h1 {
 
 .showcase-card.math {
   border-top: 4px solid var(--amber);
+}
+
+.showcase-card.smartpiece {
+  border-top: 4px solid var(--teal);
 }
 
 .apps-section,
@@ -387,6 +402,10 @@ h1 {
   border-top-color: var(--amber);
 }
 
+.app-smartpiece {
+  border-top-color: var(--teal);
+}
+
 .app-card-top {
   position: relative;
   min-height: 260px;
@@ -425,9 +444,10 @@ h1 {
   padding-inline: 42px;
 }
 
-.app-math .app-preview {
+.app-math .app-preview,
+.app-smartpiece .app-preview {
   object-fit: cover;
-  object-position: top center;
+  object-position: center;
   padding: 0;
 }
 
@@ -703,6 +723,7 @@ button:focus-visible {
   .hero-inner,
   .apps-section,
   .latest-section,
+  .support-section,
   .strategy-section,
   .site-footer {
     width: min(100% - 22px, var(--content));

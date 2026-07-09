@@ -16,6 +16,7 @@
 - Storage Cleaner support: `storagecleaner@mesikalabs.com`
 - Aura TV support: `auratv@mesikalabs.com`
 - PureShot support: `pureshot@mesikalabs.com`
+- SmartPiece support: `smartpiece@mesikalabs.com`
 - MathWar support: `support@mesikalabs.com`
 
 ## SEO Guardrails
@@ -24,6 +25,7 @@
 - Do not put app subdomain URLs in the central `sitemap.xml`; each app site owns its own sitemap.
 - It is fine for `robots.txt` to reference app sitemaps for discovery, but each subdomain still needs its own local `robots.txt` and `sitemap.xml`.
 - Do not keyword-stuff titles, headings, image alt text, or internal links. Use the keyword map in `docs/seo-keyword-research.md` as placement guidance.
+- Use `docs/design-language-system.md` as the shared MesikaLabs public-site design language before changing app-site chrome, legal pages, or family-level UI.
 
 ## Validation
 
