@@ -10,6 +10,7 @@ This repo contains:
 - `robots.txt` and `sitemap.xml`
 - `llms.txt` AI-assistant site summary
 - SEO and blog strategy documentation under `docs/`
+- shared public-site design language under `docs/design-language-system.md`
 
 ## Local Smoke Test
 

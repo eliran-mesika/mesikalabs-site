@@ -10,6 +10,7 @@
   --blue: #1f67d2;
   --red: #b72424;
   --amber: #c8871c;
+  --teal: #2f9d92;
   --shadow: 0 16px 36px rgba(17, 24, 39, 0.08);
   --content: 1180px;
 }
@@ -59,6 +60,7 @@ a {
 .hero-inner,
 .apps-section,
 .latest-section,
+.support-section,
 .strategy-section,
 .site-footer {
   width: min(100% - 32px, var(--content));
@@ -145,12 +147,12 @@ a {
 }
 
 .hero-section {
-  padding: 68px 0 56px;
+  padding: 52px 0 48px;
 }
 
 .hero-inner {
   display: grid;
-  gap: 34px;
+  gap: 28px;
   align-items: start;
 }
 
@@ -180,9 +182,9 @@ p {
 }
 
 h1 {
-  max-width: 18ch;
+  max-width: 24ch;
   margin-bottom: 20px;
-  font-size: 3.55rem;
+  font-size: 3.35rem;
   line-height: 1;
   letter-spacing: 0;
 }
@@ -226,9 +228,20 @@ h1 {
 
 .hero-showcase {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 16px;
   align-items: stretch;
+}
+
+.showcase-card.storage,
+.showcase-card.aura,
+.showcase-card.pure,
+.showcase-card.math {
+  grid-column: span 2;
+}
+
+.showcase-card.smartpiece {
+  grid-column: span 4;
 }
 
 .showcase-card {
@@ -249,7 +262,7 @@ h1 {
 
 .showcase-screen {
   width: 100%;
-  height: 390px;
+  height: 350px;
   object-fit: contain;
   object-position: top center;
   padding: 18px 48px 0;
@@ -264,6 +277,25 @@ h1 {
   background:
     radial-gradient(circle at 50% 24%, rgba(8, 183, 217, 0.18), transparent 38%),
     linear-gradient(180deg, #07101f 0%, #101a30 55%, #060b17 100%);
+}
+
+.showcase-card.smartpiece .showcase-screen {
+  padding: 0;
+  object-fit: contain;
+  object-position: center;
+  background:
+    radial-gradient(circle at 50% 38%, rgba(206, 158, 72, 0.2), transparent 46%),
+    linear-gradient(180deg, #12262b 0%, #1f1c18 100%);
+}
+
+.showcase-card.smartpiece .showcase-label {
+  border-top-color: rgba(214, 178, 105, 0.28);
+  background: #182421;
+  color: #fff7e5;
+}
+
+.showcase-card.smartpiece .showcase-label small {
+  color: #cfc8b7;
 }
 
 .showcase-label {
@@ -316,6 +348,10 @@ h1 {
   border-top: 4px solid var(--amber);
 }
 
+.showcase-card.smartpiece {
+  border-top: 4px solid var(--teal);
+}
+
 .apps-section,
 .latest-section,
 .support-section,
@@ -353,6 +389,11 @@ h1 {
   gap: 14px;
 }
 
+.app-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
 .app-card,
 .post-card,
 .strategy-grid article {
@@ -385,6 +426,16 @@ h1 {
 
 .app-math {
   border-top-color: var(--amber);
+}
+
+.app-smartpiece {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  align-items: stretch;
+  border-top-color: var(--teal);
+  background:
+    linear-gradient(90deg, rgba(20, 49, 53, 0.04), rgba(200, 135, 28, 0.08)),
+    rgba(255, 255, 255, 0.88);
 }
 
 .app-card-top {
@@ -425,10 +476,17 @@ h1 {
   padding-inline: 42px;
 }
 
-.app-math .app-preview {
+.app-math .app-preview,
+.app-smartpiece .app-preview {
   object-fit: cover;
-  object-position: top center;
+  object-position: center;
   padding: 0;
+}
+
+.app-smartpiece .app-card-top,
+.app-smartpiece .app-preview {
+  min-height: 340px;
+  height: 100%;
 }
 
 .app-card h3,
@@ -665,7 +723,7 @@ button:focus-visible {
 
 @media (max-width: 980px) {
   h1 {
-    font-size: 3.75rem;
+    font-size: 3.05rem;
   }
 
   .section-heading h2 {
@@ -681,6 +739,17 @@ button:focus-visible {
 
   .hero-showcase {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .showcase-card.storage,
+  .showcase-card.aura,
+  .showcase-card.pure,
+  .showcase-card.math {
+    grid-column: span 1;
+  }
+
+  .showcase-card.smartpiece {
+    grid-column: 1 / -1;
   }
 
   .hero-inner {
@@ -703,6 +772,7 @@ button:focus-visible {
   .hero-inner,
   .apps-section,
   .latest-section,
+  .support-section,
   .strategy-section,
   .site-footer {
     width: min(100% - 22px, var(--content));
@@ -761,6 +831,10 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .showcase-card.smartpiece {
+    grid-column: auto;
+  }
+
   .showcase-screen {
     height: 310px;
     padding: 16px 66px 0;
@@ -789,6 +863,17 @@ button:focus-visible {
 
   .app-math .app-preview {
     padding: 0;
+  }
+
+  .app-smartpiece {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .app-smartpiece .app-card-top,
+  .app-smartpiece .app-preview {
+    min-height: 240px;
+    height: 240px;
   }
 
   .apps-section,
