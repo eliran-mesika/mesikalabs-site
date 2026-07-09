@@ -9,7 +9,7 @@ This document records the canonical local repository for each MesikaLabs public 
 | Domain | Canonical local repo | GitHub remote | Hosting | Live status | Notes |
 | --- | --- | --- | --- | --- | --- |
 | `mesikalabs.com` | `/Users/eliranmesika/Repos/mesikalabs-site` | `eliran-mesika/mesikalabs-site` | GitHub Pages, `main` branch root | HTTPS 200, certificate approved, HTTPS enforced | Central MesikaLabs app hub. Do not duplicate app subdomain content here. |
-| `mathwar.mesikalabs.com` | `/Users/eliranmesika/Repos/mathwar-site` | `eliran-mesika/mathwar-site` | GitHub Pages, `main` branch root | HTTP works, HTTPS certificate missing | Dedicated MathWar public site. This is the source to update for MathWar App Store support, privacy, terms, and marketing pages. |
+| `mathwar.mesikalabs.com` | `/Users/eliranmesika/Repos/mathwar-site` | `eliran-mesika/mathwar-site` | GitHub Pages, `main` branch root | HTTPS 200, certificate approved, HTTPS enforced | Dedicated MathWar public site. This is the source to update for MathWar App Store support, privacy, terms, and marketing pages. |
 | `pureshot.mesikalabs.com` | `/Users/eliranmesika/Repos/pureshot-site` | `eliran-mesika/pureshot-site` | GitHub Pages, `main` branch root | HTTPS 200, certificate approved, HTTPS enforced | Dedicated PureShot public site. |
 | `auratv.mesikalabs.com` | `/Users/eliranmesika/Repos/auratv-site` | `eliran-mesika/auratv-site` | GitHub Pages, `main` branch root | HTTPS 200, certificate approved, HTTPS enforced | Dedicated Aura TV public site. |
 | `climbos.mesikalabs.com` | `/Users/eliranmesika/Repos/climbos-site` | `eliran-mesika/climbos-site` | GitHub Pages, `main` branch root | HTTPS 200, certificate approved, HTTPS enforced | Dedicated ClimbOS public site. Needs the same AGENTS/SEO hygiene as the other app sites. |
@@ -37,7 +37,7 @@ Do not edit these paths for public-site changes unless the canonical repo above 
 
 ## Current Follow-Up Items
 
-1. Fix GitHub Pages HTTPS for `mathwar.mesikalabs.com`; GitHub currently reports that the certificate does not exist yet and `https_enforced` cannot be enabled.
-2. Keep central hub links to MathWar conservative until the MathWar certificate is approved.
+1. Monitor GitHub Pages HTTPS for `mathwar.mesikalabs.com`; certificate was refreshed and HTTPS was enabled on 2026-07-09.
+2. Central hub links can use HTTPS for MathWar after certificate approval.
 3. Add/align `AGENTS.md`, `robots.txt`, `sitemap.xml`, and `llms.txt` for `climbos-site` if ClimbOS remains an active public site.
 4. After all canonical repos are pushed and live, archive or delete duplicate local checkouts only after explicit approval.

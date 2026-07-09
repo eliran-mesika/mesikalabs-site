@@ -200,7 +200,7 @@ Sitemap: https://mesikalabs.com/sitemap.xml
 Sitemap: https://storagecleaner.mesikalabs.com/sitemap.xml
 Sitemap: https://auratv.mesikalabs.com/sitemap.xml
 Sitemap: https://pureshot.mesikalabs.com/sitemap.xml
-Sitemap: http://mathwar.mesikalabs.com/sitemap.xml
+Sitemap: https://mathwar.mesikalabs.com/sitemap.xml
 ```
 
 ### `sitemap.xml`

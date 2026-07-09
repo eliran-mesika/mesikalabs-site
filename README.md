@@ -28,7 +28,7 @@ The homepage reads these app-owned feeds:
 - `https://storagecleaner.mesikalabs.com/blog/feed.json`
 - `https://auratv.mesikalabs.com/blog/feed.json`
 - `https://pureshot.mesikalabs.com/blog/feed.json`
-- `http://mathwar.mesikalabs.com/blog/feed.json`
+- `https://mathwar.mesikalabs.com/blog/feed.json`
 
 Each feed should return either an array of posts or an object with an `items` array. Required post fields:
 

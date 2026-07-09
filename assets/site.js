@@ -50,10 +50,10 @@
       }
     },
     {
-      url: "http://mathwar.mesikalabs.com/blog/feed.json",
+      url: "https://mathwar.mesikalabs.com/blog/feed.json",
       fallback: {
         title: "Math Practice Needs Fewer Worksheets and More Battles",
-        url: "http://mathwar.mesikalabs.com/blog/math-practice-with-battles/",
+        url: "https://mathwar.mesikalabs.com/blog/math-practice-with-battles/",
         date: "2026-05-31",
         app: "MathWar",
         summary: "A development note about arithmetic gates, hero choices, squad growth, and making short math sessions more playable.",

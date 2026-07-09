@@ -11,7 +11,7 @@ Preferred public implementation:
 - Storage Cleaner blog: `https://storagecleaner.mesikalabs.com/blog/`
 - Aura TV blog: `https://auratv.mesikalabs.com/blog/`
 - PureShot blog: `https://pureshot.mesikalabs.com/blog/`
-- MathWar blog: `http://mathwar.mesikalabs.com/blog/` while the GitHub Pages certificate is pending; switch back to HTTPS after enforcement works.
+- MathWar blog: `https://mathwar.mesikalabs.com/blog/`.
 
 Logical central taxonomy for planning and Search Console grouping:
 
