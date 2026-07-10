@@ -22,7 +22,7 @@ Do not edit these paths for public-site changes unless the canonical repo above 
 
 | Path | Status | Reason |
 | --- | --- | --- |
-| `/Users/eliranmesika/Repos/IphoneCleaner/storagecleaner-site` | Approved duplicate cleanup | Same `eliran-mesika/storagecleaner-site` remote as the canonical root-level checkout. Approved for deletion only after a final clean-worktree, ancestry, and unique-commit check. |
+| `/Users/eliranmesika/Repos/IphoneCleaner/storagecleaner-site` | Removed 2026-07-10 | The duplicate was clean, zero commits ahead of canonical `main`, and its HEAD was an ancestor of canonical `main` immediately before deletion. The parent iPhone application repository was not changed. |
 | `/Users/eliranmesika/Documents/MathWar/docs` | App-repo docs site copy | Contains `CNAME = mathwar.mesikalabs.com`, but the app repo should not be the public-site source while `/Users/eliranmesika/Repos/mathwar-site` exists. |
 | `/Users/eliranmesika/Repos/MathWar/docs` | Old/separate MathWar checkout docs | Contains `CNAME = mathwar.mesikalabs.com`; do not use for the active public site. |
 | `/Users/eliranmesika/Documents/MathWar.git-corrupt-backup-20260706-184531/docs` | Backup only | Historical backup. Never use as a source of truth. |
@@ -41,4 +41,4 @@ Do not edit these paths for public-site changes unless the canonical repo above 
 
 1. Keep SmartPiece public claims aligned with the Godot runtime repository and do not claim store availability without verified store state.
 2. Keep ClimbOS live as a separate support/legal site; add it to the flagship hub showcase only when product positioning and visual proof are ready.
-3. Complete the approved duplicate-checkout and merged-branch cleanup, then record the result in this repository.
+3. Keep future cleanup deletion-last: verify canonical ownership, recoverability, and live state before removing local duplicates or Git refs.
