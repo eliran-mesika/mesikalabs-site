@@ -1,10 +1,17 @@
 # MesikaLabs Public Site Design Language
 
-Last updated: 2026-07-09.
+Last updated: 2026-07-10.
 
 ## Direction
 
 MesikaLabs public sites should feel like one disciplined product family: static, fast, credible, and product-specific. The central site is the ecosystem hub. Each app site owns its own product proof, support, privacy, terms, sitemap, and positioning.
+
+## Repository Ownership
+
+- This document is guidance, not a shared runtime package.
+- Every product repository owns its HTML, CSS, JavaScript, images, legal pages, metadata, sitemap, and deployment configuration.
+- Do not copy product pages into the hub or create a centralized HTML source tree.
+- Shared improvements should be applied as small repository-local changes that preserve product-specific positioning and validation.
 
 ## Typography
 
@@ -33,6 +40,7 @@ MesikaLabs public sites should feel like one disciplined product family: static,
   - Aura TV: `auratv@mesikalabs.com`
   - PureShot: `pureshot@mesikalabs.com`
   - SmartPiece: `smartpiece@mesikalabs.com`
+  - ClimbOS: `climbos@mesikalabs.com`
   - MathWar: `support@mesikalabs.com`
 
 ## Accessibility And Static Constraints
@@ -48,3 +56,4 @@ MesikaLabs public sites should feel like one disciplined product family: static,
 - Storage Cleaner remains review-before-delete and must not imply automatic cloud cleanup.
 - PureShot remains natural capture, local media handling, and no tracking unless app repo truth changes.
 - MathWar and SmartPiece remain in development unless store state proves public release.
+- ClimbOS remains a local-first climbing companion and must not imply medical advice, injury diagnosis, cloud sync, accounts, or paid features unless verified product truth supports those claims.

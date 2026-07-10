@@ -17,6 +17,7 @@
 - Aura TV support: `auratv@mesikalabs.com`
 - PureShot support: `pureshot@mesikalabs.com`
 - SmartPiece support: `smartpiece@mesikalabs.com`
+- ClimbOS support: `climbos@mesikalabs.com`
 - MathWar support: `support@mesikalabs.com`
 
 ## SEO Guardrails
