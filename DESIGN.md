@@ -8,6 +8,7 @@ Build the central hub as a compact product portfolio console: clear app routing,
 
 - First viewport must show the MesikaLabs brand, app icons, real product screenshots, primary app links, and a hint of the next section.
 - The hero should prioritize routing and product proof over giant slogan space, especially on mobile.
+- Keep the first-viewport product rail on equal tracks with one shared media ratio. Crop hero thumbnails deliberately; never let source aspect ratios create tall empty lanes or make one app appear structurally dominant.
 - Use full-width sections with constrained inner content. Do not place page sections inside decorative cards.
 - Cards are allowed only for repeated app and post items, with border radius no larger than 8px.
 - Keep text dense enough for scanning. Avoid oversized marketing filler.
