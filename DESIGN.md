@@ -8,7 +8,9 @@ Build the central hub as a compact product portfolio console: clear app routing,
 
 - First viewport must show the MesikaLabs brand, app icons, real product screenshots, primary app links, and a hint of the next section.
 - The hero should prioritize routing and product proof over giant slogan space, especially on mobile.
-- Keep the first-viewport product rail on equal tracks with one shared media ratio. Crop hero thumbnails deliberately; never let source aspect ratios create tall empty lanes or make one app appear structurally dominant.
+- Keep the hero concise and separate from the authoritative product grid. Do not duplicate the full product family in both a hero rail and the apps section.
+- Present the five products as a centered 3+2 editorial grid on wide screens. Keep all five cards equal in width and weight. Every card uses the same neutral shell and `16 / 10` media frame; product color is a restrained accent, not a different card system.
+- Keep portrait app screenshots contained and readable. Landscape game proof may crop deliberately, but never let source aspect ratios create empty lanes or make one app appear structurally dominant.
 - Use full-width sections with constrained inner content. Do not place page sections inside decorative cards.
 - Cards are allowed only for repeated app and post items, with border radius no larger than 8px.
 - Keep text dense enough for scanning. Avoid oversized marketing filler.
