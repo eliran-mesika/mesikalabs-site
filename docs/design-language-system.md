@@ -41,7 +41,7 @@ MesikaLabs public sites should feel like one disciplined product family: static,
   - PureShot: `pureshot@mesikalabs.com`
   - SmartPiece: `smartpiece@mesikalabs.com`
   - ClimbOS: `climbos@mesikalabs.com`
-  - MathWar: `support@mesikalabs.com`
+  - BrainMarshal: `support@mesikalabs.com`
 
 ## Accessibility And Static Constraints
 
@@ -55,5 +55,5 @@ MesikaLabs public sites should feel like one disciplined product family: static,
 - Aura TV is a player only and does not provide content, playlists, credentials, or broadcaster accounts.
 - Storage Cleaner remains review-before-delete and must not imply automatic cloud cleanup.
 - PureShot remains natural capture, local media handling, and no tracking unless app repo truth changes.
-- MathWar and SmartPiece remain in development unless store state proves public release.
+- BrainMarshal and SmartPiece remain in development unless store state proves public release.
 - ClimbOS remains a local-first climbing companion and must not imply medical advice, injury diagnosis, cloud sync, accounts, or paid features unless verified product truth supports those claims.

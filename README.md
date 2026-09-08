@@ -44,3 +44,7 @@ Optional fields:
 - `category`
 - `image`
 - `imageAlt`
+
+## BrainMarshal routing
+
+The hub uses BrainMarshal in product navigation, metadata, support/privacy links and the blog filter. The working destination remains `https://mathwar.mesikalabs.com/` until the new subdomain has DNS, HTTPS and legacy redirects configured. Never publish links to the new hostname before those checks pass.

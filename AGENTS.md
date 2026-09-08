@@ -18,7 +18,7 @@
 - PureShot support: `pureshot@mesikalabs.com`
 - SmartPiece support: `smartpiece@mesikalabs.com`
 - ClimbOS support: `climbos@mesikalabs.com`
-- MathWar support: `support@mesikalabs.com`
+- BrainMarshal support: `support@mesikalabs.com`
 
 ## SEO Guardrails
 

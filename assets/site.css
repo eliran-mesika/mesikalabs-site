@@ -641,7 +641,7 @@ main section[id] {
     #eef2ec;
 }
 
-.post-card[data-app="MathWar"] .post-thumb {
+.post-card[data-app="BrainMarshal"] .post-thumb {
   padding: 14px;
   background:
     radial-gradient(circle at 50% 26%, rgba(8, 183, 217, 0.16), transparent 38%),
@@ -922,3 +922,6 @@ button:focus-visible {
     scroll-behavior: auto;
   }
 }
+
+/* Preserve the full portrait game UI inside the shared app media frame. */
+.app-math .app-preview { object-fit: contain; background: #0b1526; }
