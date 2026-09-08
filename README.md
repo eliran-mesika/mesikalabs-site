@@ -29,7 +29,7 @@ The homepage reads these app-owned feeds:
 - `https://storagecleaner.mesikalabs.com/blog/feed.json`
 - `https://auratv.mesikalabs.com/blog/feed.json`
 - `https://pureshot.mesikalabs.com/blog/feed.json`
-- `https://mathwar.mesikalabs.com/blog/feed.json`
+- `https://brainmarshal.mesikalabs.com/blog/feed.json`
 
 Each feed should return either an array of posts or an object with an `items` array. Required post fields:
 
@@ -47,4 +47,4 @@ Optional fields:
 
 ## BrainMarshal routing
 
-The hub uses BrainMarshal in product navigation, metadata, support/privacy links and the blog filter. The working destination remains `https://mathwar.mesikalabs.com/` until the new subdomain has DNS, HTTPS and legacy redirects configured. Never publish links to the new hostname before those checks pass.
+The hub uses BrainMarshal in product navigation, metadata, support/privacy links and the blog filter. The canonical destination is `https://brainmarshal.mesikalabs.com/`. Cloudflare redirects the legacy MathWar hostname with paths and query strings preserved. DNS and HTTPS were verified on 2026-09-08.

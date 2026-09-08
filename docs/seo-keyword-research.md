@@ -163,7 +163,6 @@ Placement:
 - Alt text: describe the actual image and include a niche term only when the image genuinely shows it.
 - Internal links: use crawlable `<a href>` links with descriptive anchor text.
 - Canonicals: each page should point to its final HTTPS URL, not a staging URL or duplicate subdomain.
-- Exception: while `mathwar.mesikalabs.com` is still blocked on GitHub Pages certificate issuance, keep MathWar crawl files on `http://` so crawlers do not hit a broken HTTPS canonical. Flip back to HTTPS when the certificate is issued and enforced.
 
 ## `llms.txt`
 
@@ -200,7 +199,7 @@ Sitemap: https://mesikalabs.com/sitemap.xml
 Sitemap: https://storagecleaner.mesikalabs.com/sitemap.xml
 Sitemap: https://auratv.mesikalabs.com/sitemap.xml
 Sitemap: https://pureshot.mesikalabs.com/sitemap.xml
-Sitemap: https://mathwar.mesikalabs.com/sitemap.xml
+Sitemap: https://brainmarshal.mesikalabs.com/sitemap.xml
 ```
 
 ### `sitemap.xml`
