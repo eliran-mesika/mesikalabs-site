@@ -20,7 +20,7 @@ Build the central hub as a compact product portfolio console: clear app routing,
 ## Visual System
 
 - Base: warm white, ink, low-contrast gray lines.
-- Accent mix: green for Storage Cleaner, blue for Aura TV, black/red for PureShot, amber for MathWar, and teal/brass for SmartPiece.
+- Accent mix: green for Storage Cleaner, blue for Aura TV, black/red for PureShot, amber for BrainMarshal, and teal/brass for SmartPiece.
 - Avoid a one-note palette. Each app can keep a small accent, but the page itself should stay neutral.
 - Letter spacing remains `0`.
 - Font sizes use fixed responsive steps at breakpoints, not viewport-width scaling.
